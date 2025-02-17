@@ -5,7 +5,7 @@
 Install package
 
 ```
-composer require ijodkor/office
+composer require only-office
 ```
 
 Publish assets
@@ -142,3 +142,6 @@ All files stored to /storage/app/private path
 custom
 key.
 Use key another name (shared_key) for example
+
+### Co-author
+- [Azizbek Gulaliyev](mailto:azizgulaliyev44@gmail.com)
