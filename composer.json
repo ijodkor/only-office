@@ -1,0 +1,48 @@
+{
+    "name": "ijodkor/only-office",
+    "description": "OnlyOffice package for Laravel/PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "OnlyOffice\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anvar Zaripboyev",
+            "email": "anvarindastries@gmail.com"
+        },
+        {
+            "name": "Azizbek Gulaliyev",
+            "email": "azizgulaliyev44@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1",
+        "ijodkor/laravel-api-response": "^1.2",
+        "illuminate/contracts": "^9.21|^10.0|^11.0",
+        "illuminate/support": "^9.21|^10.0|^11.0",
+        "spatie/laravel-package-tools": "^1.16|^1.18"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0"
+    },
+    "scripts": {
+        "lint": [
+            "@php vendor/bin/phpstan analyse"
+        ],
+        "test": [
+            "@php vendor/bin/phpunit"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnlyOffice\\OnlyOfficeServiceProvider"
+            ]
+        }
+    }
+}
