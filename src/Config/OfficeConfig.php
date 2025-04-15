@@ -9,10 +9,10 @@ class OfficeConfig {
      * @return string
      */
     public static function getUrl(): string {
-        return config('integration.office_server_url');
+        return config('office.server_url');
     }
 
     public static function getSecret(): string {
-        return config('integration.office_jwt_secret');
+        return config('office.jwt_secret');
     }
 }
