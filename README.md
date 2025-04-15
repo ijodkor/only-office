@@ -8,6 +8,13 @@ Install package
 composer require only-office
 ```
 
+Publish config
+
+```
+php artisan vendor:publish --tag only-office-config
+```
+
+
 Publish assets
 
 ```
