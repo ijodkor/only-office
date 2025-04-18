@@ -1,4 +1,6 @@
 # Laravel OnlyOffice
+This is a Laravel package designed to integrate OnlyOffice functionality into Laravel applications.
+[OnlyOffice](https://www.onlyoffice.com/) is an open-source office suite that includes tools for document, spreadsheet, and presentation editing, and supports collaborative editing in real time.
 
 ## Installation
 
