@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'root' => env('OFFICE_STORAGE_PATH', 'app/private'),
+    'storage' => env('OFFICE_STORAGE_PATH', ''),
 
 
     /*

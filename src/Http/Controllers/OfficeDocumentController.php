@@ -16,7 +16,7 @@ class OfficeDocumentController extends Controller {
         try {
             $decoded = $this->tokenService->verify($request->get('token')); // $request->get('date')
             // $path = $this->fileService->getTemplatePath("/$decoded->directory/$decoded->filename");
-            $path = storage_path($decoded->path);
+            $path = getStorage($decoded->path);
 
             return response()->download($path);
         } catch (Exception $ex) {

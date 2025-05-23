@@ -24,7 +24,7 @@ class FileService implements IFileService {
      */
     public function storeAs(string $source, string $destination): string {
         $storage = $this->storage;
-        $src = DocFile::getStorage($source);
+        $src = DocFile::getStoragePath($source);
         if (!File::exists($src)) {
             throw new WarningException('Source file is not found!');
         }
@@ -63,7 +63,7 @@ class FileService implements IFileService {
         }
 
         // path to file in storage
-        $dest = storage_path($path);
+        $dest = getStorage($path);
 
         // Store file,
         File::put($dest, $content, LOCK_EX);

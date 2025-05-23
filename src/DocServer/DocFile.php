@@ -21,14 +21,14 @@ class DocFile {
         return implode(DIRECTORY_SEPARATOR, $paths);
     }
 
-    public static function getStorage(string $path): string {
+    public static function getStoragePath(string $path): string {
         $paths = [self::PRIVATE, $path];
-        return storage_path(implode(DIRECTORY_SEPARATOR, $paths));
+        return getStorage(implode(DIRECTORY_SEPARATOR, $paths));
     }
 
     public static function getDocumentPath(string $prefix, string $path): string {
         $paths = [self::PRIVATE, $prefix, $path];
-        return storage_path(implode(DIRECTORY_SEPARATOR, $paths));
+        return getStorage(implode(DIRECTORY_SEPARATOR, $paths));
     }
 
     /* History */

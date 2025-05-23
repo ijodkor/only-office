@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "OnlyOffice\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helpers/helper.php"
+        ]
     },
     "authors": [
         {

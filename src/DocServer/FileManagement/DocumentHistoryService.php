@@ -131,7 +131,7 @@ class DocumentHistoryService {
     }
 
     public function makeDirectory(string $dirname): string {
-        $path = storage_path(DocFile::PRIVATE . "/$dirname");
+        $path = getStorage(DocFile::PRIVATE . "/$dirname");
         if (!is_dir($path) && !file_exists($path)) {
             mkdir($path, recursive: true);
         }

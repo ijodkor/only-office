@@ -30,7 +30,7 @@ class OnlyOfficeServiceProvider extends PackageServiceProvider {
 
         // Publish example files
         $this->publishes([
-            __DIR__ . '/../examples' => storage_path('app/private/examples'),
+            __DIR__ . '/../examples' => getStorage('app/private/examples'),
         ], 'assets');
     }
 }
