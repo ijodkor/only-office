@@ -110,7 +110,7 @@ All files stored to /storage/app/private path
 ## Requirements
 
 - PHP ^8.1
-- Laravel ^8
+- Laravel ^10
 
 ## References
 
